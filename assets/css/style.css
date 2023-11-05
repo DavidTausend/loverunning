@@ -14,11 +14,13 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color:#3a3a3a;
+    color: #3a3a3a;
     font-family: 'lato', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -50,7 +52,7 @@ header a {
     list-style-type: none;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1rem;
 }
 
@@ -110,7 +112,8 @@ main {
 }
 
 /* Color the cover text */
-#cover-text > h2, #cover-text > h3 {
+#cover-text>h2,
+#cover-text>h3 {
     color: #ffffff;
 }
 
@@ -126,8 +129,8 @@ main {
     font-size: 280%;
 }
 
-#benefits-physical > div,
-#benefits-mental > div {
+#benefits-physical>div,
+#benefits-mental>div {
     line-height: 20px;
     margin-bottom: 20px;
 }
@@ -139,6 +142,23 @@ main {
 #benefits hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
+}
+
+#circle-cover-bg {
+    background: url('../images/reasons-image.webp') no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    /* Makes the square image into a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Footer */
@@ -154,11 +174,12 @@ main {
 #social-networks i {
     font-size: 160%;
     padding: 5%;
-    color:#3a3a3a;
+    color: #3a3a3a;
 }
 
 /* Media query: tables and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -172,9 +193,10 @@ main {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
+
     .nav-toggle-label {
         display: none;
     }
@@ -199,7 +221,7 @@ main {
 }
 
 /* Large devices (laptops and desktop, 992px and up) */
-@media  screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
     #menu a:hover {
         /* Your styles for hovered <a> tags here */
         border-bottom: 1px solid #3a3a3a;
