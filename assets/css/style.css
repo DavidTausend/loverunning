@@ -217,6 +217,14 @@ i {
     color: #3a3a3a;
 }
 
+/* Media query: tables and landscape (576px and up) */
+@media screen and (min-width: 576px) {
+    #photes {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /* Media query: tables and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -276,6 +284,11 @@ i {
         text-align: end;
         align-self: flex-end;
     }
+
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
 }
 
 /* Large devices (laptops and desktop, 992px and up) */
@@ -283,6 +296,11 @@ i {
     #menu a:hover {
         /* Your styles for hovered <a> tags here */
         border-bottom: 1px solid #3a3a3a;
+    }
+
+    /* Gallery */
+    #photos {
+        column-count: 4;
     }
 }
 
