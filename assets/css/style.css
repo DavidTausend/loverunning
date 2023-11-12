@@ -51,13 +51,13 @@ header a {
 
 
 #menu {
-    font-size: large;
+    font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
 }
 
 #menu>li {
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 .active {
@@ -178,7 +178,7 @@ main {
 #times div {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
-    padding: 1rem;
+    padding: 15px;
     text-align: center;
     /* this will not wrap on screens of less than 400px wide.
     Each div will expand to fill the available space on its row */
@@ -188,8 +188,7 @@ main {
     border: 2px solid white;
 }
 
-#times h3,
-i {
+#times h3 {
     /* Override the heading color set in general styles */
     color: #fafafa;
 }
@@ -204,39 +203,30 @@ i {
     line-height: 0;
 }
 
-/* Footer */
-#social-networks {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
 /* Signup page */
 
 #signup {
     background: url("../images/signup-image.webp") no-repeat center/cover;
     background-size: cover;
     background-position: 75%;
-    flex-grow: 1;
     padding: 20px 10% 0 10%;
+    flex-grow: 1;
 }
 
 #signup-form {
     color: #ffffff;
-    background-color: rgba(60,60,60, 0.6);
+    background-color: rgba(60, 60, 60, 0.6);
     padding: 30px;
 }
 
-#signup-form >h2 {
+#signup-form>h2 {
     color: #fafafa;
     margin-bottom: 20px;
 }
 
 .text-input {
     background: transparent;
-    color:#fafafa;
+    color: #fafafa;
     width: 100%;
     height: 25px;
     margin: 5px 0 20px 0;
@@ -254,10 +244,19 @@ i {
 .join-button {
     border-radius: 2px;
     background-color: #454b1b;
-    color:#fafafa;
     font-size: 100%;
     padding: 15px 32px;
     margin-top: 20px;
+    color: #fafafa;
+}
+
+/* Footer */
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
 /* color the fonts icons. e.g Facebook,etc */
@@ -269,7 +268,7 @@ i {
 
 /* Media query: tables and landscape (576px and up) */
 @media screen and (min-width: 576px) {
-    #photes {
+    #photos {
         column-count: 2;
         column-gap: 0;
     }
@@ -300,9 +299,9 @@ i {
     }
 
     #logo {
-        font-size: 200%;
+        font-size: 280%;
         line-height: 75px;
-        margin: 0 0 5rem;
+        margin: 0 0.5rem;
     }
 
     /* Main content */
@@ -353,7 +352,7 @@ i {
         top: 150px;
     }
 
-    #text-input:hover {
+    .text-input:hover {
         border-color: #f16c6b;
     }
 
@@ -378,6 +377,7 @@ i {
 
 /* Large devices (1200px and up) */
 @media screen and (min-width: 1200px) {
+    /* Reasons section */
     #benefits {
         display: flex;
         flex-direction: row;
@@ -388,7 +388,7 @@ i {
     }
 
     #benefits-image {
-        order: 0;
+        order: 0
     }
 
     #benefits-mental {
